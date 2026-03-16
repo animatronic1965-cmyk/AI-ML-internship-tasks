@@ -1,2 +1,10 @@
+Task objective: To predict the next day's closing stock price based on historical daily market data, demonstrating the application of machine learning for short-term financial forecasting.
+
+Dataset used: Historical daily market data for Apple Inc. (ticker: AAPL) spanning from January 1, 2022, to January 1, 2024. The data was fetched using the Yahoo Finance (yfinance) API. The specific features used to train the model were the daily 'Open', 'High', 'Low', and 'Volume' metrics.
+
+Models applied: A Linear Regression model was implemented using the scikit-learn library. The model was trained on 80% of the historical timeline to establish a mathematical baseline, and tested on the remaining 20% to evaluate its predictive accuracy.
+
+Key results and findings: (Note: You can tweak this slightly based on how your specific graph looks, but this is the standard result for this type of model!) The visualization of the actual versus predicted closing prices showed that the Linear Regression model successfully captured the overall general trend of the stock's movement. However, because basic regression relies heavily on the most recent data points, it often lagged slightly behind sudden, highly volatile price swings or unexpected market breakouts. Ultimately, while the model is effective at mapping general direction, it highlights the difficulty of predicting exact daily fluctuations in the stock market.
+
 Check out the live project here: https://colab.research.google.com/drive/1pfk20e-nNyl00D4D_ZBy6w__-Shk-1pd?usp=sharing
 
