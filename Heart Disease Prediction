@@ -1,0 +1,33 @@
+Project Title: Heart Disease Risk Prediction Model
+Project Overview
+This project focuses on building a machine learning model to predict the likelihood of a patient developing heart disease based on their medical attributes. Using the UCI Heart Disease dataset, the goal was to apply data science techniques to medical data to create a reliable binary classification system. Ultimately, predictive models like this play a huge role in easing people's lives by allowing for early detection and intervention for serious health conditions.
+
+What We Did (Step-by-Step)
+
+Data Cleaning and Preparation: We started by loading the dataset and verifying its integrity. This involved checking for missing or null values to ensure the model had clean, reliable data to learn from.
+
+Exploratory Data Analysis (EDA): Before feeding data into the algorithm, we visually explored it. We generated count plots to see the distribution of healthy versus at-risk patients and created a correlation heatmap to identify which medical features (like chest pain or maximum heart rate) had the strongest relationships with heart disease.
+
+Model Training: We split the data into a training set (to teach the model) and a testing set (to test its knowledge). We then trained a Decision Tree Classifier, a model chosen for its high interpretability, which is crucial in healthcare settings.
+
+Model Evaluation: We evaluated the model's performance on unseen data using several rigorous metrics rather than relying on accuracy alone:
+
+Confusion Matrix: This allowed us to see exactly where the model succeeded and where it failed, specifically tracking dangerous "False Negatives" (predicting a sick patient is healthy).
+
+ROC Curve & AUC: We plotted the Receiver Operating Characteristic curve and calculated the Area Under the Curve (AUC) to measure how well the model distinguishes between the two classes across different thresholds.
+
+Feature Importance Analysis: Finally, we extracted the mathematical logic from the Decision Tree to rank the medical features. We visualized which specific factors (such as chest pain type or number of major blood vessels) were the strongest predictors of heart disease, turning raw data into actionable medical insights.
+
+Core Skills Demonstrated
+
+Data Processing: Cleaning and structuring tabular data using Python (pandas, numpy).
+
+Data Visualization: Designing insightful EDA charts using matplotlib and seaborn.
+
+Machine Learning: Implementing and training a binary classification algorithm (scikit-learn).
+
+Statistical Evaluation: Interpreting complex evaluation metrics like ROC-AUC and confusion matrices.
+
+check out the project here: https://colab.research.google.com/drive/1i2uRS2wHsKy1_92S-5DqYiSS3urz7EVk?usp=sharing
+
+Domain Interpretation: Translating mathematical feature importance into practical, real-world medical contexts.
